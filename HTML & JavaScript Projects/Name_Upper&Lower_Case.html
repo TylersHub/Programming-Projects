@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>UPPER/LOWER-CASE NAME</title>
+<style>
+	label{float:left;width:250px;}
+	br{clear:both;}
+</style>
+<script>
+    function convert2Uppercase()
+    {
+        upper.value=fn.value.toUpperCase()+" "+ln.value.toUpperCase();
+    }
+    function convert2Lowercase()
+    {
+        lower.value=fn.value.toLowerCase()+" "+ln.value.toLowerCase();
+    }
+    function both()
+    {
+        convert2Uppercase();
+        convert2Lowercase();
+    }
+</script>
+</head>
+<body>
+	<form>
+		<div>UPPER/LOWER-CASE NAME</div>
+		<label>Enter First Name:</label><input type = 'text' id="fn" /><br>
+		<label>Enter Last Name: </label><input type = 'text' id="ln" /><br>
+		<label>Full Name In Uppercase: </label><input type = 'text' id="upper" /><br>
+		<label>Full Name In Lowercase: </label><input type = 'text' id="lower" /><br>
+		<input type = 'button' value = 'Uppercase' onclick="convert2Uppercase()" />
+		<input type = 'button' value = 'Lowercase' onclick="convert2Lowercase()" />
+		<input type = 'button' value = 'Both' onclick="both()" />
+		<input type = 'button' value = 'Clear' />
+	</form>
+</body>
+</html>
