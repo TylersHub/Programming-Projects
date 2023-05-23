@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sum&Difference</title>
+		<style>
+			label{float:left;width:100px;}
+			br{clear:both;}
+		</style>
+        <script>
+            function add2()
+            {
+                if(isNaN(n1.value) || n1.value==" ") alert("Number1 is invalid");
+                else if(isNaN(n2.value) || n2.value==" ") alert("Number2 is invalid");
+                else
+                ans1.value=parseFloat(n1.value)+parseFloat(n2.value);
+                ans2.value=parseFloat(n1.value)-parseFloat(n2.value);
+            }
+        </script>
+	</head>
+	<body>
+		<form>
+			<div>SUM & DIFFERENCE CALCULATOR</div>
+			<label>Number1:</label><input type = 'text' id="n1" /><br>
+			<label>Number2:</label><input type = 'text' id="n2" /><br>
+            <label>Sum:</label><input type = 'text' id="ans1" /><br>
+			<label>Difference:</label><input type = 'text' id="ans2" /><br>
+			<input type = 'button' value = 'Sum and Difference' onclick="add2();" />
+			<input type = 'reset' value = 'Clear' />
+		</form>
+	</body>
+</html>
